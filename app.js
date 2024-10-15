@@ -12,6 +12,13 @@ form.addEventListener('submit', function(event) {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const topic = document.getElementById('topic').value;
+    // Push data to the Data Layer on form submission
+window.dataLayer.push({
+    'event': 'formSubmit', // Custom event name
+    'userName': name, // User's name
+    'userEmail': email, // User's email
+    'userTopic': topic // Selected topic
+});
 
     // Display a success message to the user
     messageDiv.innerHTML = `Thank you, <strong>${name}</strong>! We will send updates about <strong>${topic}</strong> to <strong>${email}</strong>.`;
