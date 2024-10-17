@@ -61,19 +61,25 @@ input, select {
     border-radius: 4px;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
-button:hover {
-    background-color: #555;
-}
+#signup-button {
+        background-color: #4CAF50; /* Green background */
+        border: none; /* Remove borders */
+        color: white; /* White text */
+        padding: 15px 32px; /* Add some padding */
+        text-align: center; /* Center text */
+        text-decoration: none; /* Remove underline */
+        display: inline-block; /* Make it inline-block */
+        font-size: 16px; /* Increase font size */
+        margin: 4px 2px; /* Add margin */
+        cursor: pointer; /* Pointer cursor on hover */
+        border-radius: 8px; /* Rounded corners */
+        transition: background-color 0.3s; /* Smooth transition */
+    }
 
+    #signup-button:hover {
+        background-color: #45a049; /* Darker green on hover */
+    }
 /* Message styles */
 .message {
     margin-top: 20px;
